@@ -1,8 +1,17 @@
+import EventLog from 'page/eventLog/EventLog';
+import Main from 'page/main/Main';
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 
-function App() {
-  return <div>안녕</div>;
+function App(): JSX.Element {
+  return (
+    <>
+      <Switch>
+        <Route path="/main" component={Main} />
+        <Route path="/eventLog" component={EventLog} />
+      </Switch>
+    </>
+  );
 }
 
 export default App;
