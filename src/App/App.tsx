@@ -9,6 +9,7 @@ function App(): JSX.Element {
       <Routes>
         <Route path="/main" element={<Main />} />
         <Route path="/eventLog" element={<EventLog />} />
+        <Route path="/event" element={<EventLog />} />
       </Routes>
     </>
   );
